@@ -1,0 +1,20 @@
+﻿<Window x:Class="WPF_Homework2._14.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="grid1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="800" Height="435" >
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FFB1FFCC" Offset="1"/>
+                <GradientStop Color="#FF5A8268" Offset="0.051"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="buttonStart" Content="启动!" FontSize="24" HorizontalAlignment="Left" Margin="222,256,0,0" VerticalAlignment="Top" Click="buttonStart_Click" />
+        <Button x:Name="buttonEnd" Content="停止!" FontSize="24" HorizontalAlignment="Left" Margin="539,256,0,0" VerticalAlignment="Top" Click="buttonEnd_Click" />
+        <Label x:Name="label1" Content="看我的位置" FontSize="24" HorizontalAlignment="Left" Margin="320,119,0,0" VerticalAlignment="Top" />
+    </Grid>
+</Window>
